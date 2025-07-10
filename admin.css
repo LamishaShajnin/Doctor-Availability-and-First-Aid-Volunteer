@@ -1,0 +1,126 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+  }
+  
+
+  
+  .menu-list li:hover {
+    color: #ffcc00;
+  }
+  
+  /* Admin dashboard layout */
+  .admin-dashboard {
+    display: flex;
+    padding: 20px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    height: calc(100vh - 90px);
+    position: sticky;
+    top: 80px;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sidebar-list li {
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Main details area */
+  .details {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .details > div {
+    margin-bottom: 40px;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0a74da;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Buttons */
+  .accept-btn,
+  .reject-btn {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .accept-btn {
+    background-color: #28a745;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545;
+  }
+  
+  /* Graph section */
+  .graph-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .bar-graph,
+  .pie-chart {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
