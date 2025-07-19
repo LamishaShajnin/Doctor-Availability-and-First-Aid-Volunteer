@@ -1,0 +1,88 @@
+.dashboard-section {
+    padding: 20px;
+  }
+  
+  .dashboard-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .history th, .history td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .rating {
+    padding: 4px;
+  }
+  .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin:30px;
+  }
+  .current, .past{
+    background-color: rgb(227, 15, 15);
+    padding:5px 280px;
+    color:white
+  }
+  .current:hover, .past:hover{
+    background-color: rgb(120, 73, 73);
+  }
+  .past{
+    background-color: rgb(7, 53, 7);
+  }
+  .heading{
+    text-align: center;
+  }
+  .curStatusDetail{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+  .responder-details, .amount-details, .payment{
+    background-color: rgb(208, 199, 199);
+    padding:20px;
+    border-radius: 10px;
+  }
+  .responder-details:hover, .amount-details:hover, .payment:hover{
+    background-color: rgb(220, 196, 196);
+  }
+  form{
+    color:rgb(255, 0, 0)
+  }
+  form input{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  form button, .submit-payment-btn{
+    padding: 5px 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form button:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  select{
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width:50%;
+  }
+.paymentMethodMb, .mb-method{
+  display:none;
+}
+  
