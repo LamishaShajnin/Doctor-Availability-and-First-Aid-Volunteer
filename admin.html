@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>FastAid - Admin Dashboard</title>
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Admin Dashboard Layout -->
+        <div class="admin-dashboard">
+            <div class="sidebar">
+                <div class="admin-header">
+                    <div class="admin-logo">
+                        <span class="logo-icon">FA</span>
+                        <span class="logo-text">FastAid Admin</span>
+                    </div>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="dashboard active">Dashboard</li>
+                    <li class="resDet">Responders Details</li>
+                    <li class="vReq">View Requests</li>
+                    <li class="stat">Status</li>
+                    <li class="logout">Logout</li>
+                </ul>
+            </div>
+            <div class="details">
+                <div class="admin-content-header">
+                    <h1>Admin Dashboard</h1>
+                </div>
+
+                <div class="responder-details">
+                    <h2>Responder Details</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Responder Name</th>
+                                <th>Join Date</th>
+                                <th>Contact</th>
+                                <th>Address</th>
+                                <th>Rating</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>John Doe</td>
+                                <td>2025-05-01</td>
+                                <td>+8801715541258</td>
+                                <td>Mirpur, Dhaka</td>
+                                <td>5</td>
+                              </tr>
+                              <tr>
+                                <td>Jane Smith</td>
+                                <td>2025-05-15</td>
+                                <td>+8801715541259</td>
+                                <td>Dhanmondi, Dhaka</td>
+                                <td>4</td>
+                              </tr>
+                              <tr>
+                                <td>Michael Johnson</td>
+                                <td>2025-06-01</td>
+                                <td>+8801715541260</td>
+                                <td>Gulshan, Dhaka</td>
+                                <td>5</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="accept-reject">
+                    <h2>Pending Requests</h2>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                              <tr>
+                                <th>Request ID</th>
+                                <th>Responder Name</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>001</td>
+                                <td>Jane Smith</td>
+                                <td>123 Main St, City</td>
+                                <td><span class="status-pending">Pending</span></td>
+                                <td class="action-buttons">
+                                    <button class="accept-btn">Accept</button>
+                                    <button class="reject-btn">Reject</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>002</td>
+                                <td>John Doe</td>
+                                <td>456 Park Ave, City</td>
+                                <td><span class="status-pending">Pending</span></td>
+                                <td class="action-buttons">
+                                    <button class="accept-btn">Accept</button>
+                                    <button class="reject-btn">Reject</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <h2>Statistics</h2>
+                    <div class="graph-container">
+                        <div class="chart-box">
+                            <h3>Response Times</h3>
+                            <canvas id="barChart"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <h3>Request Types</h3>
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="admin-footer">
+            <p>© 2025 FastAid Admin Panel. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
+cdn.jsdelivr.net

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>FastAid - Register</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header">
+            <ul class="logo">
+                <li><a href="index.html" class="logo-link">FA</a></li>
+                <li><a href="index.html" class="logo-text">FastAid</a></li>
+            </ul>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register As Responder</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="requestHelp.html">Request Help</a></li>
+            </ul>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-container">
+            <h2>Responder Registration</h2>
+            <form action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Your City/Location</label>
+                        <input type="text" id="location" name="location" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="license">License Number</label>
+                    <input type="text" id="license" name="license" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="certification">Certification</label>
+                    <select id="certification" name="certification" required>
+                        <option value="">-- Select Certification --</option>
+                        <option value="emt">EMT</option>
+                        <option value="paramedic">Paramedic</option>
+                        <option value="nurse">Nurse</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="first_responder">First Responder</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="uploadFile">Upload Certification Documents:</label>
+                    <input type="file" name="uploadFile" id="uploadFile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredTime">Preferred Availability:</label>
+                    <select name="preferredTime" id="preferredTime" required>
+                        <option value="">-- Select Time Slot --</option>
+                        <option value="morning">Morning (6 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                        <option value="evening">Evening (4 PM - 8 PM)</option>
+                        <option value="night">Night (8 PM - 12 AM)</option>
+                        <option value="late-night">Late Night (12 AM - 6 AM)</option>
+                        <option value="anytime">Anytime</option>
+                    </select>
+                </div>
+
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required />
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+
+                <button type="submit" class="btn-submit">Register Now</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer1">
+                <h3>FastAid</h3>
+                <br>
+                <p>FastAid connects trained responders with individuals in need of emergency medical assistance.</p>
+                <br>
+                <p>© 2025 FastAid. All rights reserved.</p>
+            </div>
+            <div class="footer1">
+                <h3>Links</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register As Responder</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="requestHelp.html">Request Help</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Social Media</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Resources</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Training Resources</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Contact Us</h3>
+                <br>
+                <ul class="footer-list">
+                    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li>Email: <a href="mailto:fastaid@gmail.com">fastaid@gmail.com</a></li>
+                    <li>Address: 123 Main St, City</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

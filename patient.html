@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="patient.css" />
+  <title>Patient Dashboard</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header">
+      <ul class="logo">
+        <li>Logo</li>
+        <li>FastAid</li>
+      </ul>
+      <ul class="menu-list">
+        <li>Home</li>
+        <li>Request Help</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+
+    <div class="dashboard-section">
+      <h2 class="heading">Welcome, Patient Name</h2>
+      <div class="section">
+      <h4 class="current">Current Request</h4>
+      <h4 class="past">Past Status</h4>
+      </div>
+      
+      <div class="history">
+        <h3>Your Request History</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Responder Name</th>
+              <th>Case</th>
+              <th>Status</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025-05-01</td>
+              <td>John Doe</td>
+              <td>Accident</td>
+              <td>Completed</td>
+              <td>
+                <select class="rating">
+                  <option value="">Rate</option>
+                  <option value="1">⭐</option>
+                  <option value="2">⭐⭐</option>
+                  <option value="3">⭐⭐⭐</option>
+                  <option value="4">⭐⭐⭐⭐</option>
+                  <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+              </td>
+            </tr>
+            <!-- More rows dynamically or manually -->
+          </tbody>
+        </table>
+      </div>
+      <div class="curStatusDetail">
+        <div class="responder-details">
+          <h3>Responder Details</h3>
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Phone:</strong> +1 111 222 3333</p>
+          <p><strong>Location:</strong> Zone A</p>
+          <p><strong>Response Time:</strong> 5 mins</p>
+        </div>
+        <div class="amount-details">
+          <h3>Payment Details</h3>
+          <p><strong>Amount:</strong> $50</p>
+          <p><strong>Status:</strong> Unaid ❌</p>
+        </div>
+        <div class="payment">
+          <p><strong> Select Payment Method</p>
+
+          <select class="payment-method">
+            <option value="credit-card">Credit Card</option>
+            <option value="debit-card">Debit Card</option>
+            <option value="mobile-banking">Mobile Banking</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+          <br><br>
+          <p class="mb-method"><strong> Select Mobile Banking Method</p>
+          
+            <select class="paymentMethodMb">
+              <option value="Bkash">Bkash</option>
+              <option value="Rocket">Rocket</option>
+              <option value="Nagad">Nagad</option>
+              <option value="Upay">Upay</option>
+            </select>
+            <br><br>
+            <!-- debt/credit card form code -->
+            <form class="card-payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required />
+              <br><br>
+            <label for="card-holder-name">Card Holder Name:</label>
+            <input type="text" id="card-holder-name" name="card-holder-name" placeholder="Enter card holder name" required />
+            <br><br>
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required />
+            <br><br>
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" name="cvv" placeholder="Enter CVV" required />
+            <br><br>
+            </form>
+            <!-- mobile banking form code -->
+            <form class="mobile-banking-form">
+              
+              <label for="mobile-number">Mobile Number:</label>
+              <input type="text" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" required />
+              <br><br>
+              <label for="transaction-id">Transaction ID:</label>
+              <input type="text" id="transaction-id" name="transaction-id" placeholder="Enter transaction ID" required />
+              <br><br>
+              
+            </form>
+            <!-- bank transfer form -->
+            <form class="bank-transfer-form">
+              <label for="account-number">Account Number:</label>
+              <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required />
+              <br><br>
+              <label for="bank-name">Bank Name:</label>
+              <input type="text" id="bank-name" name="bank-name" placeholder="Enter your bank name" required />
+              <br><br>
+              <label for="transaction-id-bank">Transaction ID:</label>
+              <input type="text" id="transaction-id-bank" name="transaction-id-bank" placeholder="Enter transaction ID" required />
+              <br><br>
+            
+            </form>
+            <button class="submit-payment-btn" type="submit">Submit Payment</button>
+        </div>
+
+      </div>
+      
+    </div>
+
+   <!-- footer -->
+ <div class="footer">
+    <div class="footer1">
+        <h3>FastAid</h3>
+        <br>
+        <p>FastAid is a platform that connects trained responders with individuals in need of emergency medical assistance.</p>
+        <br>
+        <p>©copyright 2025 FastAid. All rights reserved</p>
+    </div>
+    <div class="footer1">
+        <h3>Link  </h3>
+        <br>
+            <ul class="footer-list">
+                <li>Home</li>
+                <li>Register As Responder</li>
+                <li>Dashboard</li>
+            </ul>
+      
+    </div>
+    <div class="footer1">
+        <h3>Social Media</h3>
+        <br>
+        <ul class="footer-list">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+        </ul>
+    </div>
+    <div class="footer1">
+        <h3>Resources</h3>
+        <br>
+        <ul>
+            <li>Fast Aid Guieds</li>
+            <li>Training Resources</li>
+            <li>FAQs</li>
+            
+        </ul>
+    </div>
+    <div class="footer1">
+        <h3>Contact Us</h3>
+        <br>
+        <ul class="footer-list">
+            <li>Phone: +1 234 567 890</li>
+            <li>Email:fastaid@gmail.com</li>
+            <li>Address: 123 Main St, City, Country</li>
+    </div>
+
+  </div>
+
+  <script src="patient.js"></script>
+</body>
+</html>

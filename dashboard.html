@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="index.css">
+    <title>FastAid - Dashboard</title>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header">
+            <ul class="logo">
+                <li><a href="index.html" class="logo-link">FA</a></li>
+                <li><a href="index.html" class="logo-text">FastAid</a></li>
+            </ul>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register As Responder</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="requestHelp.html">Request Help</a></li>
+            </ul>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-container">
+            <div class="status-container">
+                <div class="responder-status">
+                    Status: <span id="status-text" class="status-indicator">Offline</span>
+                </div>
+                
+                <div class="status-buttons">
+                    <button class="status-btn active-btn">Go Active</button>
+                    <button class="status-btn offline-btn">Go Offline</button>
+                </div>
+            </div>
+            
+            <div class="main-div">
+                <div class="details">
+                    <div class="settings">
+                        <div class="profile">
+                            <img src="image.png" alt="Profile Photo" class="profile-pic">
+                            <p>John Doe</p>
+                        </div>
+                        <div class="respons-satas">
+                            <h3>Response Stats</h3>
+                            <p>Total Responses: 50</p>
+                            <p>Average Response Time: 4 mins</p>
+                            <p>Successfully Assists: 45</p>
+                            <p>Email: johndoe@gmail.com</p>
+                        </div>
+                        <div class="profile-icon">
+                            <i class="fas fa-user"></i> Profile
+                        </div>
+                        <div class="notification">
+                            <i class="fas fa-bell"></i> Notifications
+                        </div>
+                        <div class="settings-icon">
+                            <i class="fas fa-cog"></i> Settings
+                        </div>
+                        <div class="logout-icon">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </div>
+                    </div>
+                    <div class="record">
+                        <div class="record-typ">
+                            <h4 class="active-res">Active Emergencies</h4>
+                            <h4 class="past-res">Past Responses</h4>
+                        </div>
+                        <div class="emer-num">
+                            <h5>Emergency Near You</h5>
+                            <p>2 emergencies within your response radius</p>
+                        </div>
+                        <div class="active-case-detail">
+                            <div class="case">
+                                <h4>Case 1</h4>
+                                <p>Location: 123 Main St</p>
+                                <p>Type: Cardiac Arrest</p>
+                                <div class="case-buttons">
+                                    <button class="btn-case accept-btn">Accept</button>
+                                    <button class="btn-case reject-btn">Reject</button>
+                                    <button class="btn-case details-btn">Details</button>
+                                    <button class="btn-case complete-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="past-case-detail">
+                            <div class="past-case">
+                                <h4>Case 1</h4>
+                                <p>Location: Mirpur, Dhaka, Bangladesh</p>
+                                <p>Type: Cardiac Arrest</p>
+                                <p>Date: 05/04/2025 Time:10.54 PM</p>
+                                <button class="btn-case details-btn">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer1">
+                <h3>FastAid</h3>
+                <br>
+                <p>FastAid is a platform that connects trained responders with individuals in need of emergency medical assistance.</p>
+                <br>
+                <p>©copyright 2025 FastAid. All rights reserved</p>
+            </div>
+            <div class="footer1">
+                <h3>Links</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Register As Responder</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="requestHelp.html">Request Help</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Social Media</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Resources</h3>
+                <br>
+                <ul class="footer-list">
+                    <li><a href="#">Fast Aid Guides</a></li>
+                    <li><a href="#">Training Resources</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <h3>Contact Us</h3>
+                <br>
+                <ul class="footer-list">
+                    <li>Phone: <a href="tel:+1234567890">+1 234 567 890</a></li>
+                    <li>Email: <a href="mailto:fastaid@gmail.com">fastaid@gmail.com</a></li>
+                    <li>Address: 123 Main St, City, Country</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="dashboard.js"></script>
+</body>
+</html>
+cdnjs.cloudflare.com
